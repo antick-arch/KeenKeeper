@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Mitchell",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    "email": "sarah.mitchell@example.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["college", "travel buddy"],
+    "bio": "Met during computer science classes in university. We still plan spontaneous weekend trips together.",
+    "goal": 14,
+    "next_due_date": "2026-05-04"
+  },
+  {
+    "id": 2,
+    "name": "Daniel Kim",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "email": "daniel.kim@example.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["gym", "startup"],
+    "bio": "Workout partner who recently launched a small tech startup. Always shares productivity tips.",
+    "goal": 14,
+    "next_due_date": "2026-05-14"
+  },
+  {
+    "id": 3,
+    "name": "Ayesha Rahman",
+    "picture": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df",
+    "email": "ayesha.rahman@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school friend", "designer"],
+    "bio": "We studied together in high school. She now works as a UI/UX designer and loves photography.",
+    "goal": 14,
+    "next_due_date": "2026-05-20"
+  },
+  {
+    "id": 4,
+    "name": "Marcus Rivera",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "email": "marcus.rivera@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["remote coworker", "gaming"],
+    "bio": "Former remote teammate from a freelance project. We usually catch up while playing online games.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 5,
+    "name": "Nina Patel",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "email": "nina.patel@example.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["book club", "close friend"],
+    "bio": "Known for recommending amazing mystery novels. We meet monthly for coffee and book discussions.",
+    "goal": 14,
+    "next_due_date": "2026-05-12"
+  },
+  {
+    "id": 6,
+    "name": "Omar Hassan",
+    "picture": "https://images.unsplash.com/photo-1504257432389-52343af06ae3",
+    "email": "omar.hassan@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["football", "neighbor"],
+    "bio": "Neighborhood friend who organizes local football matches every Friday evening.",
+    "goal": 10,
+    "next_due_date": "2026-05-18"
+  },
+  {
+    "id": 7,
+    "name": "Emily Carter",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+    "email": "emily.carter@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["internship", "mentor"],
+    "bio": "Met during a summer internship. She gives excellent career advice and interview preparation tips.",
+    "goal": 14,
+    "next_due_date": "2026-05-07"
+  },
+  {
+    "id": 8,
+    "name": "Rafiul Karim",
+    "picture": "https://images.unsplash.com/photo-1504593811423-6dd665756598",
+    "email": "rafiul.karim@example.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["developer", "hackathon"],
+    "bio": "Hackathon teammate who enjoys building side projects and discussing new web technologies.",
+    "goal": 14,
+    "next_due_date": "2026-05-21"
+  }
+]
