@@ -1,10 +1,41 @@
+'use client'
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
+import { ImStatsDots } from 'react-icons/im';
+import { RiHome2Line, RiTimeLine } from 'react-icons/ri';
 
 const NavbarPage = () => {
+    const pathname = usePathname()
     return (
-        <div>
-            This is navbar
+        <div className='bg-base-100 shadow-sm'>
+            <div className="navbar container mx-auto">
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul
+                            tabIndex="-1"
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/timeline">Timeline</Link></li>
+                            <li><Link href="/stats">Stats</Link></li>
+                        </ul>
+                    </div>
+                    <Image src={'/assets/logo.png'} alt='logo' width={141} height={50} />
+                </div>
+                <div className="navbar-end hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1 space-x-1">
+                        <li><Link className={`${pathname === '/' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/"><RiHome2Line className='text-xl'></RiHome2Line>Home</Link></li>
+                        <li><Link className={`${pathname === '/timeline' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/timeline"><RiTimeLine className='text-xl'/>Timeline</Link></li>
+                        <li><Link className={`${pathname === '/stats' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/stats"><ImStatsDots className='text-xl' />Stats</Link></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     );
 };
 
