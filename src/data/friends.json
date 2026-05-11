@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Sarah Mitchell",
-    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    "picture": "https://i.ibb.co/4Z9XZMTC/images-2.jpg",
     "email": "sarah.mitchell@example.com",
     "days_since_contact": 21,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Daniel Kim",
-    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "picture": "https://i.ibb.co/1Y9ZCq4k/images-1.jpg",
     "email": "daniel.kim@example.com",
     "days_since_contact": 11,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Ayesha Rahman",
-    "picture": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df",
+    "picture": "https://i.ibb.co/Z1FKbm49/images.jpg",
     "email": "ayesha.rahman@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Marcus Rivera",
-    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "picture": "https://i.ibb.co/whC3m8QJ/download-1.jpg",
     "email": "marcus.rivera@example.com",
     "days_since_contact": 30,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Nina Patel",
-    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "picture": "https://i.ibb.co/fY02k9Mf/download.jpg",
     "email": "nina.patel@example.com",
     "days_since_contact": 13,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Omar Hassan",
-    "picture": "https://images.unsplash.com/photo-1504257432389-52343af06ae3",
+    "picture": "https://i.ibb.co/jkbHpdST/images-3.jpg",
     "email": "omar.hassan@example.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Emily Carter",
-    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+    "picture": "https://i.ibb.co/jkbHpdST/images-3.jpg",
     "email": "emily.carter@example.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Rafiul Karim",
-    "picture": "https://images.unsplash.com/photo-1504593811423-6dd665756598",
+    "picture": "https://i.ibb.co/jkbHpdST/images-3.jpg",
     "email": "rafiul.karim@example.com",
     "days_since_contact": 7,
     "status": "on-track",

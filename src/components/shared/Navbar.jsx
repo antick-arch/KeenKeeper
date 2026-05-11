@@ -24,7 +24,7 @@ const NavbarPage = () => {
                             <li><Link className={`${pathname === '/stats' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/stats"><ImStatsDots className='text-xl' />Stats</Link></li>
                         </ul>
                     </div>
-                    <Link href={'/'}><Image src={'/assets/logo.png'} alt='logo' width={141} height={50} /></Link>
+                    <Link href={'/'}><Image className='w-auto h-auto' src={'/assets/logo.png'} alt='logo' width={141} height={50} /></Link>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-1">
