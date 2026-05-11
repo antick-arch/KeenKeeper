@@ -19,17 +19,17 @@ const NavbarPage = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><Link href="/">Home</Link></li>
-                            <li><Link href="/timeline">Timeline</Link></li>
-                            <li><Link href="/stats">Stats</Link></li>
+                            <li><Link className={`${pathname === '/' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/"><RiHome2Line className='text-xl'></RiHome2Line>Home</Link></li>
+                            <li><Link className={`${pathname === '/timeline' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/timeline"><RiTimeLine className='text-xl' />Timeline</Link></li>
+                            <li><Link className={`${pathname === '/stats' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/stats"><ImStatsDots className='text-xl' />Stats</Link></li>
                         </ul>
                     </div>
-                    <Image src={'/assets/logo.png'} alt='logo' width={141} height={50} />
+                    <Link href={'/'}><Image src={'/assets/logo.png'} alt='logo' width={141} height={50} /></Link>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-1">
                         <li><Link className={`${pathname === '/' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/"><RiHome2Line className='text-xl'></RiHome2Line>Home</Link></li>
-                        <li><Link className={`${pathname === '/timeline' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/timeline"><RiTimeLine className='text-xl'/>Timeline</Link></li>
+                        <li><Link className={`${pathname === '/timeline' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/timeline"><RiTimeLine className='text-xl' />Timeline</Link></li>
                         <li><Link className={`${pathname === '/stats' ? 'bg-[#244D3F] text-white gap-1 font-medium' : ''}`} href="/stats"><ImStatsDots className='text-xl' />Stats</Link></li>
                     </ul>
                 </div>
