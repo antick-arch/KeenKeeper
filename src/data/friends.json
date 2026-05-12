@@ -42,7 +42,7 @@
     "email": "marcus.rivera@example.com",
     "days_since_contact": 30,
     "status": "overdue",
-    "tags": ["remote coworker", "gaming"],
+    "tags": ["remote worker", "gaming"],
     "bio": "Former remote teammate from a freelance project. We usually catch up while playing online games.",
     "goal": 14,
     "next_due_date": "2026-04-25"

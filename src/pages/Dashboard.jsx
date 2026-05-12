@@ -18,7 +18,7 @@ const Dashboard = () => {
                 <Labels></Labels>
                 <div className="divider"></div>
             </div>
-            <div className='max-w-277.5 mx-auto grid grid-cols-4 place-items-center'>
+            <div className='max-w-277.5 mx-auto grid md:grid-cols-4 place-items-center gap-4'>
                 {
                     friends.map((friend) => <Card key={friend.id} friend={friend}></Card>)
                 }
