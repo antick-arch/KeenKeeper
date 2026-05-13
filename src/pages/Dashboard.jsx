@@ -1,7 +1,6 @@
 import Labels from '@/components/Labels';
-import React, { use } from 'react';
 import { FiPlus } from 'react-icons/fi';
-import friends from '../data/friends.json'
+import friends from '@/data/friends.json';
 import Card from '@/components/Card';
 
 
@@ -18,6 +17,7 @@ const Dashboard = () => {
                 <Labels></Labels>
                 <div className="divider"></div>
             </div>
+            <h2 className='max-w-277.5 mx-auto text-2xl font-semibold pb-3'>Your Friends</h2>
             <div className='max-w-277.5 mx-auto grid md:grid-cols-4 place-items-center gap-4'>
                 {
                     friends.map((friend) => <Card key={friend.id} friend={friend}></Card>)

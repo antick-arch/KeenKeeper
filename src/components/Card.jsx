@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Card = ({ friend }) => {
     console.log(friend.picture);
     return (
-        <div className='w-[259.5px] shadow-sm rounded-md p-6 flex flex-col items-center justify-center'>
+        <Link href={`/details/${friend.id}`} className='w-[259.5px] shadow-sm rounded-md p-6 flex flex-col items-center justify-center'>
             <Image
                 className='rounded-full w-20 h-20 object-cover mb-2'
                 src={friend.picture}
@@ -26,7 +27,7 @@ const Card = ({ friend }) => {
                     friend.status === 'on-track' ? 'bg-[#244D3F] text-white' : ''
                 }`}>{friend.status}</div>
             </div>
-        </div>
+        </Link>
     );
 };
 
