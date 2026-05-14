@@ -1,7 +1,10 @@
 import "./globals.css";
 import NavbarPage from "@/components/shared/Navbar";
 import FooterPage from "@/components/shared/Footer";
+import { FriendProvider } from '@/context/FriendContext';
 import { Geist } from 'next/font/google'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
  
 const geist = Geist({
   subsets: ['latin'],
@@ -20,9 +23,12 @@ export default function RootLayout({ children }) {
       className={geist.className}
     >
       <body className="min-h-full">
-        <NavbarPage></NavbarPage>
-        {children}
-        <FooterPage></FooterPage>
+        <FriendProvider>
+          <NavbarPage />
+          {children}
+          <FooterPage />
+          <ToastContainer position="top-right" />
+        </FriendProvider>
       </body>
     </html>
   );

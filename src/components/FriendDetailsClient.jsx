@@ -2,10 +2,13 @@
 
 import { LuPhoneCall } from 'react-icons/lu';
 import { PiChatTextBold, PiVideoCameraBold } from 'react-icons/pi';
+import { useFriend } from '@/context/FriendContext';
 
 const FriendDetailsClient = ({ currentFriend }) => {
+    const { addEventForFriend } = useFriend();
+
     const handleCall = async (friend) => {
-        console.log(friend);
+        addEventForFriend('call', friend);
     };
 
     const handleEdit = () => {
@@ -13,11 +16,11 @@ const FriendDetailsClient = ({ currentFriend }) => {
     };
 
     const handleText = () => {
-        console.log('Text:', currentFriend.id);
+        addEventForFriend('text', currentFriend);
     };
 
     const handleVideo = () => {
-        console.log('Video call:', currentFriend.id);
+        addEventForFriend('video', currentFriend);
     };
 
     return (
