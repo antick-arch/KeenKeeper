@@ -1,7 +1,8 @@
 import friends from '@/data/friends.json';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { PiArchiveLight } from 'react-icons/pi';
+import { LuPhoneCall } from 'react-icons/lu';
+import { PiArchiveLight, PiChatTextBold, PiVideoCameraBold } from 'react-icons/pi';
 import { RiDeleteBin6Line, RiNotificationSnoozeFill } from 'react-icons/ri';
 
 const FriendDetails = async ({ params }) => {
@@ -11,8 +12,8 @@ const FriendDetails = async ({ params }) => {
         return notFound();
     }
     return (
-        <div className='max-w-277.5 mx-auto grid md:grid-cols-4 place-items-center gap-4 my-20'>
-            <div className='max-w-87.5'>
+        <div className='max-w-277.5 mx-auto my-20 flex flex-col md:flex-row gap-6'>
+            <div className='max-w-87.5 mx-auto'>
                 <div className='w-full shadow-sm rounded-md p-6 flex flex-col items-center justify-center'>
                     <Image
                         className='rounded-full w-20 h-20 object-cover mb-2'
@@ -48,11 +49,47 @@ const FriendDetails = async ({ params }) => {
                 </div>
             </div>
 
+            <div className='space-y-6'>
+                <div className='grid md:grid-cols-3 gap-6'>
+                    <div className='text-center bg-white shadow rounded-md px-5 py-8'>
+                        <h2 className='text-3xl font-semibold'>62</h2>
+                        <p className='text-[#64748B]'>Days Since Contact</p>
+                    </div>
+                    <div className='text-center bg-white shadow rounded-md px-5 py-8'>
+                        <h2 className='text-3xl font-semibold'>62</h2>
+                        <p className='text-[#64748B]'>Days Since Contact</p>
+                    </div>
+                    <div className='text-center bg-white shadow rounded-md px-5 py-8'>
+                        <h2 className='text-3xl font-semibold'>62</h2>
+                        <p className='text-[#64748B]'>Days Since Contact</p>
+                    </div>
+                </div>
+                <div className='max-w-full bg-white shadow p-6 rounded-lg'>
+                    <div className='flex justify-between'>
+                        <h2 className='text-xl font-medium text-[#244D3F]'>Relationship Goal</h2>
+                        <button className='btn'>Edit</button>
+                    </div>
+                    <h2 className='text-black/50'>Connect every <span className='font-bold text-black'>30 days</span></h2>
+                </div>
+                <div className='rounded-lg bg-white max-w-full shadow p-6 space-y-4'>
+                    <h2 className='font-medium text-xl text-[#244D3F]'>Quick Check-In</h2>
+                    <div className='grid grid-cols-3 gap-4'>
+                        <button className='flex flex-col justify-center items-center p-4 bg-gray-100 rounded-md space-y-2'>
+                            <LuPhoneCall className='text-[26px] font-extrabold' />
+                            <h2>Call</h2>
+                        </button>
+                        <button className='flex flex-col justify-center items-center p-4 bg-gray-100 rounded-md space-y-2'>
+                            <PiChatTextBold className='text-[26px] font-extrabold' />
+                            <h2>Text</h2>
+                        </button>
+                        <button className='flex flex-col justify-center items-center p-4 bg-gray-100 rounded-md space-y-2'>
+                            <PiVideoCameraBold className='text-[26px] font-extrabold' />
+                            <h2>Video</h2>
+                        </button>
 
-
-
-
-            <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

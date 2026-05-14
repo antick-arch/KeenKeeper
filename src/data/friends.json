@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Emily Carter",
-    "picture": "https://i.ibb.co/jkbHpdST/images-3.jpg",
+    "picture": "https://i.ibb.co/5WCQL8Vr/img1.jpg",
     "email": "emily.carter@example.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Rafiul Karim",
-    "picture": "https://i.ibb.co/jkbHpdST/images-3.jpg",
+    "picture": "https://i.ibb.co/cnBFKs1/img2.jpg",
     "email": "rafiul.karim@example.com",
     "days_since_contact": 7,
     "status": "on-track",

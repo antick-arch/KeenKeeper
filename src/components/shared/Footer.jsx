@@ -7,9 +7,9 @@ const FooterPage = () => {
     return (
         <div className='bg-[#244D3F]'>
             <div className='max-w-277.5 mx-auto'>
-                <div className='flex flex-col md:items-center md:justify-center space-y-6 pt-20'>
-                    <Image src={'/assets/logo-xl.png'} alt='logo' width={412} height={61} className='w-auto h-auto'></Image>
-                    <p className='text-white/70'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+                <div className='flex flex-col md:items-center md:justify-center space-y-6 pt-10 md:pt-20'>
+                    <Image src={'/assets/logo-xl.png'} alt='logo' width={412} height={61} className='h-auto w-full max-w-103 px-4 md:px-0'></Image>
+                    <p className='text-white/70 px-4'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                     <div className='flex flex-col items-center justify-center space-y-4'>
                         <h2 className='text-white/80 text-xl font-medium'>Social Links</h2>
                         <div className='flex items-center justify-center gap-2'>
