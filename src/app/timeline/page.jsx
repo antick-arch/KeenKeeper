@@ -22,7 +22,7 @@ const TimelinePage = () => {
         <div className="max-w-277.5 mx-auto my-5 md:my-20 space-y-6">
             <h2 className="font-bold text-3xl md:text-5xl">Timeline</h2>
             <select value={filter} onChange={(e) => setFilter(e.target.value)} className="select appearance-none text-black/50">
-                <option value="all">All</option>
+                <option value="all">Filter Timeline</option>
                 <option value="call">Calls</option>
                 <option value="text">Texts</option>
                 <option value="video">Video</option>
