@@ -12,7 +12,7 @@ const FriendDetails = async ({ params }) => {
     }
 
     return (
-        <div className='max-w-277.5 mx-auto my-20 flex flex-col md:flex-row gap-6'>
+        <div className='max-w-277.5 mx-auto md:my-20 flex flex-col md:flex-row gap-6'>
             <div className='max-w-87.5 mx-auto'>
                 <div className='w-full shadow-sm rounded-md p-6 flex flex-col items-center justify-center'>
                     <Image
@@ -38,7 +38,7 @@ const FriendDetails = async ({ params }) => {
 
                     <div className='mt-2'>
                         <p className='text-center text-black/50 italic'>"{currentFriend.bio}"</p>
-                        <p className='text-center text-black/50 italic'><small>Preferred: email</small></p>
+                        <p className='text-center text-black/50 italic'><small>Preferred: {currentFriend.email}</small></p>
                     </div>
                 </div>
                 <FriendActionsClient currentFriend={currentFriend} />
@@ -47,16 +47,16 @@ const FriendDetails = async ({ params }) => {
             <div className='space-y-6'>
                 <div className='grid md:grid-cols-3 gap-6'>
                     <div className='text-center bg-white shadow rounded-md px-5 py-8'>
-                        <h2 className='text-3xl font-semibold'>62</h2>
+                        <h2 className='text-3xl font-semibold text-[#244D3F]'>{currentFriend.days_since_contact}</h2>
                         <p className='text-[#64748B]'>Days Since Contact</p>
                     </div>
                     <div className='text-center bg-white shadow rounded-md px-5 py-8'>
-                        <h2 className='text-3xl font-semibold'>62</h2>
-                        <p className='text-[#64748B]'>Days Since Contact</p>
+                        <h2 className='text-3xl font-semibold text-[#244D3F]'>{currentFriend.goal}</h2>
+                        <p className='text-[#64748B]'>Goal (Days)</p>
                     </div>
                     <div className='text-center bg-white shadow rounded-md px-5 py-8'>
-                        <h2 className='text-3xl font-semibold'>62</h2>
-                        <p className='text-[#64748B]'>Days Since Contact</p>
+                        <h2 className='text-3xl font-semibold text-[#244D3F]'>{new Date(currentFriend.next_due_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</h2>
+                        <p className='text-[#64748B]'>Next Due</p>
                     </div>
                 </div>
                 <FriendDetailsClient currentFriend={currentFriend} />

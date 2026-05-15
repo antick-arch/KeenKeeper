@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Sarah Mitchell",
+    "name": "Devid Mitchell",
     "picture": "https://i.ibb.co/4Z9XZMTC/images-2.jpg",
-    "email": "sarah.mitchell@example.com",
+    "email": "devid.mitchell@example.com",
     "days_since_contact": 21,
     "status": "overdue",
     "tags": ["college", "travel buddy"],
@@ -25,9 +25,9 @@
   },
   {
     "id": 3,
-    "name": "Ayesha Rahman",
+    "name": "Akash Rahman",
     "picture": "https://i.ibb.co/Z1FKbm49/images.jpg",
-    "email": "ayesha.rahman@example.com",
+    "email": "akash.rahman@example.com",
     "days_since_contact": 5,
     "status": "on-track",
     "tags": ["school friend", "designer"],
@@ -49,9 +49,9 @@
   },
   {
     "id": 5,
-    "name": "Nina Patel",
+    "name": "James Patel",
     "picture": "https://i.ibb.co/fY02k9Mf/download.jpg",
-    "email": "nina.patel@example.com",
+    "email": "james.patel@example.com",
     "days_since_contact": 13,
     "status": "almost due",
     "tags": ["book club", "close friend"],
@@ -85,9 +85,9 @@
   },
   {
     "id": 8,
-    "name": "Rafiul Karim",
+    "name": "Ayesha Karim",
     "picture": "https://i.ibb.co/cnBFKs1/img2.jpg",
-    "email": "rafiul.karim@example.com",
+    "email": "ayesha.karim@example.com",
     "days_since_contact": 7,
     "status": "on-track",
     "tags": ["developer", "hackathon"],

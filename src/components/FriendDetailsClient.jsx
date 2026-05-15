@@ -38,7 +38,7 @@ const FriendDetailsClient = ({ currentFriend }) => {
             </div>
             <div className='rounded-lg bg-white max-w-full shadow p-6 space-y-4'>
                 <h2 className='font-medium text-xl text-[#244D3F]'>Quick Check-In</h2>
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid md:grid-cols-3 gap-4'>
                     <button
                         onClick={() => handleCall(currentFriend)}
                         className='flex flex-col justify-center items-center p-4 bg-gray-100 rounded-md space-y-2'
